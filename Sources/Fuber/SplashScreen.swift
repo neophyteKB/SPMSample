@@ -28,7 +28,7 @@
 
 import SwiftUI
 
-struct SplashScreen: View {
+public struct SplashScreen: View {
   static var shouldAnimate = true
   let fuberBlue = Color("Fuber blue")
   let uLineWidth: CGFloat = 5
@@ -101,6 +101,9 @@ struct SplashScreen: View {
     .background(fuberBlue)
     .edgesIgnoringSafeArea(.all)
   }
+    public func printLog() {
+        print("Log is printed here")
+    }
 }
 
 extension SplashScreen {
